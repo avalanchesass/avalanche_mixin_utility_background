@@ -1,0 +1,11 @@
+/*---
+title:   Background
+section: Utility
+---
+
+Color scheme background with contrast text color.
+*/
+@mixin u-background($-cs: a, $-cs-contrast: $-cs) {
+  background: map-get($cs, $-cs);
+  color: map-get($cs-contrast, $-cs-contrast);
+}
