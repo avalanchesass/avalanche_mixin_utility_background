@@ -4,6 +4,16 @@ section: Mixin
 ---
 
 Color scheme background with contrast text color.
+
+```css
+u-background([$-cs: a[, $-cs-contrast: $-cs]])
+```
+
+```css
+.foo {
+  @include u-background();
+}
+```
 */
 @mixin u-background($-cs: a, $-cs-contrast: $-cs) {
   background: map-get($cs, $-cs);
